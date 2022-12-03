@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Abel;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(204, 204, 203);
+}
+
+.contenedor-general {
+    width: 100%;
+    max-width: 600px;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 4px grey;
+    border-radius: 2px;
+    gap: 10px;
+    background-color: aliceblue;
+}
+
+.indication {
+    margin: 0;
+}
+
+form {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.file {
+    padding: 5px;
+    background-color: rgb(43, 158, 158);
+    overflow: hidden;
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-btn {
+    pointer-events: none;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+#audio {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* visibility: hidden; */
+    padding: 10px;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#btn-trans {
+    padding: 5px;
+    font-size: 20px;
+    width: 300px;
+    margin: auto;
+    background-color: rgb(85, 184, 142);
+    border-radius: 40px;
+    color: aliceblue;
+    transition: all .3s;
+}
+
+#btn-trans:hover {
+    color: rgb(85, 184, 142);
+    background-color: aliceblue;
+    border: 1px solid rgb(85, 184, 142);
+}
+
+h1 {
+
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+}
+
+.transcribe {
+    margin: auto;
+    /* border: 1px solid; */
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgb(180, 180, 180);
+    font-size: 22px;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    user-select: text;
+
+}
+.transcribe::selection{
+    background-color: black;
+    color: aliceblue;
+}

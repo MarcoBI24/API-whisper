@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css')}}">
+
+</head>
+
+<body>
+    <h1>Transcribe with Whisper</h1>
+    <div class="contenedor-general">
+        <p class="indication">Ingrese el audio en formato mp3</p>
+        <form action="/" method="post" id="form" enctype="multipart/form-data">
+            <div class="file">
+                <input type="file" name="audio_file" id="audio">
+                <p class="text-btn">Upload your audio</p>
+            </div>
+            <input type="submit" value="Transcribe" id="btn-trans">
+        </form>
+
+    </div>
+    <div class="transcribe">
+        {{ data }}
+    </div>
+
+</body>
+
+</html>
